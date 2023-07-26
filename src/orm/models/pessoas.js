@@ -11,6 +11,12 @@ module.exports = (sequelize, DataTypes) => {
       pessoas.hasOne(models.logins, {
         foreignKey: { name: 'idPessoa', allowNull: false },
       });
+      pessoas.belongsTo(models.responsaveis, {
+        foreignKey: { name: 'idPessoaResposavel', allowNull: false },
+      });
+      pessoas.belongsTo(models.responsaveis, {
+        foreignKey: { name: 'idPessoaAluno', allowNull: false },
+      });
     }
   }
   pessoas.init(

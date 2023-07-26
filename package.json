@@ -10,11 +10,6 @@
     "prettier": "prettier --config .prettierrc --write .",
     "lint": "eslint ."
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint"
-    }
-  },
   "keywords": [],
   "author": "Maik Medeiros Moreira",
   "license": "ISC",
