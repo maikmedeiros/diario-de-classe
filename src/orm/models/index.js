@@ -1,3 +1,6 @@
+// npx sequelize db:migrate --env testing - Comando usando para mudar o ambiente do banco de dados
+// npx sequelize-cli model:create --name pessoas --attributes nome:string,dtNascimento:date,cpf:string,email:string,rg:string - Comando de exemplo para criar um model
+
 'use strict';
 
 const fs = require('fs');

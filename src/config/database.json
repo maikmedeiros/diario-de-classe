@@ -3,5 +3,12 @@
     "dialect": "sqlite",
     "storage": "./database.sqlite",
     "define": { "freezeTableName": true }
+  },
+  "production": {
+    "username": "root",
+    "password": "Mysql2022@",
+    "database": "DIARIODECLASSE",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   }
 }
