@@ -7,7 +7,8 @@
     "dev": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "prettier": "prettier --config .prettierrc --write ."
+    "prettier": "prettier --config .prettierrc --write .",
+    "lint": "eslint ."
   },
   "husky": {
     "hooks": {
