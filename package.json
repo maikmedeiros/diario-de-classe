@@ -9,6 +9,12 @@
     "prepare": "husky install",
     "prettier": "prettier --config .prettierrc --write ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier && npm run lint",
+      "pre-push": "npm run prettier && npm run lint"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
