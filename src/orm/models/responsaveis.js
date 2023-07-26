@@ -17,9 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   responsaveis.init(
-    {
-      
-    },
+    {},
     {
       sequelize,
       modelName: 'responsaveis',
