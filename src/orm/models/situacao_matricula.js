@@ -1,7 +1,5 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class situacao_matricula extends Model {
     /**
@@ -15,11 +13,14 @@ module.exports = (sequelize, DataTypes) => {
       });
     }
   }
-  situacao_matricula.init({
-    nome: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'situacao_matricula',
-  });
+  situacao_matricula.init(
+    {
+      nome: DataTypes.STRING,
+    },
+    {
+      sequelize,
+      modelName: 'situacao_matricula',
+    },
+  );
   return situacao_matricula;
 };
